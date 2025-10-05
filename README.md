@@ -226,7 +226,7 @@ In the following figures it is possible to observe the impact of a late frost re
 
 ## Conclusion
 
-The investigation, "Fields between drought, heat wave and frost: Observing changes in agriculture from space," was driven by a personal urgency rooted in the Argentine farming communities impacted by climate extremes, directly addressing the core mission of the "Through the Radar Looking Glass" challenge by turning satellite observations into a vital diagnostic tool. 
+The investigation, "Fields between drought, heat waves and frost: Observing changes in agriculture from space," was driven by a personal urgency rooted in the Argentine farming communities impacted by climate extremes, directly addressing the core mission of the "Through the Radar Looking Glass" challenge by turning satellite observations into a vital diagnostic tool. 
 
 We developed two custom Landsat 8–9 scripts to reveal the physical drivers of climate stress: one quantifying the collapse in crop health caused by historic drought and heatwave conditions, and the other providing a critical time-series analysis of damaging late-season frost events. 
 
