@@ -108,6 +108,8 @@ This combination enables temporal visualization in EO Browser time-lapse mode, a
 
 ### Details of the script: Drought and Heatwave
 
+Here the [Drought and Heatwave script](./Script/drought%20%2B%20heat%20wave.txt)
+
 In the following figures it is possible to observe the evolution of the region before and after the heatwave event in Argentina.
 
 -   **Figure A (during the event, early January 2025):** After the heat wave, extreme temperatures (red/white), loss of vegetation cover (reduced green), and drought indicators are observed.
