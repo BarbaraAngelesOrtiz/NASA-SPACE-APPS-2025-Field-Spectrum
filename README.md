@@ -51,22 +51,14 @@ and dryness**.
 
 -   **Spectral bands used:**
 
-  -----------------------------------------------------------------------------
-  **Band**   **Description**          **Unit**            **Purpose**
-  ---------- ------------------------ ------------------- ---------------------
-  B03        Green (0.53--0.59 µm)    Reflectance         NDVI / NDWI
-                                                          calculation
+| Band | Description                     | Unit                    | Purpose                          |
+|------|----------------------------------|--------------------------|----------------------------------|
+| B03  | Green (0.53–0.59 µm)             | Reflectance              | NDVI / NDWI calculation          |
+| B04  | Red (0.64–0.67 µm)               | Reflectance              | NDVI calculation                 |
+| B05  | Near Infrared (0.85–0.88 µm)     | Reflectance              | NDVI / NDWI                      |
+| B09  | Cirrus (1.36–1.38 µm)            | Reflectance              | Cloud masking                    |
+| B10  | Thermal Infrared (10.6–11.19 µm) | Brightness Temperature (K) | Surface temperature estimation |
 
-  B04        Red (0.64--0.67 µm)      Reflectance         NDVI calculation
-
-  B05        Near Infrared            Reflectance         NDVI / NDWI
-             (0.85--0.88 µm)                              
-
-  B09        Cirrus (1.36--1.38 µm)   Reflectance         Cloud masking
-
-  B10        Thermal Infrared         Brightness          Surface temperature
-             (10.6--11.19 µm)         Temperature (K)     estimation
-  -----------------------------------------------------------------------------
 
 ### Processing logic
 
@@ -142,6 +134,7 @@ In the following figures it is possible to observe the evolution of the region b
 *Figure D. January 2025, Mar Chiquita,Argentina (Cordoba Province)*
 
 ![AWS_LOTL1-379883988684818-timelapse](https://github.com/user-attachments/assets/f49d61bd-f300-422b-a72a-e2c15fad26ce)
+
 *Timelapse June 2024 to May 2025, Argentina (Mar Chiquita, 5 km resolution)*
 
 ![AWS_LOTL1-588973063144651-timelapse](https://github.com/user-attachments/assets/86dc93ec-60a9-47a6-a66d-a91f796f93a9)
