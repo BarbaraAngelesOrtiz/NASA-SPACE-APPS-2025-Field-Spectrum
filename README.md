@@ -1,5 +1,6 @@
 # 🌎 NASA Space Apps Challenge 2025 Field-Spectrum
-# 🛰️ Technical Methodology: Heatwaves and Droughts in Agricultural Fields
+# 🛰️ Technical Methodology: Heatwaves and Droughts in Agricultural Fields <img width="1024" height="1024" alt="Gemini_Generated_Image_w9179pw9179pw917" src="https://github.com/user-attachments/assets/a12d1b85-c780-4d6d-b2e0-e422939640ee" />
+
 
 ## General Description of the Scripts
 
@@ -226,11 +227,17 @@ In the following figures it is possible to observe the impact of a late frost re
 
 ## Conclusion
 
-Rooted in a personal commitment to the Argentine farming community, this project met the core mission of the \"Through the Radar Looking Glass\" challenge by turning satellite observations into a vital diagnostic tool.
+The investigation, "Fields between drought, heat wave and frost: Observing changes in agriculture from space," was driven by a personal urgency rooted in the Argentine farming communities impacted by climate extremes, directly addressing the core mission of the "Through the Radar Looking Glass" challenge by turning satellite observations into a vital diagnostic tool. 
 
-We developed two custom Landsat 8--9 scripts to reveal the physical drivers of climate stress: one quantifying the collapse in crop health caused by historic drought and heatwave conditions, and the other providing a critical time-series analysis of damaging late-season frost events.
+We developed two custom Landsat 8–9 scripts to reveal the physical drivers of climate stress: one quantifying the collapse in crop health caused by historic drought and heatwave conditions, and the other providing a critical time-series analysis of damaging late-season frost events. 
 
 By transforming complex data into a clear visual narrative, the project delivers actionable insights for immediate disaster response and supports the long-term adaptation strategies essential for the resilience of the agricultural system.
+
+![IMG_20201231_105007162](https://github.com/user-attachments/assets/5fb7a23d-81d8-4310-ac0d-9f03eb3a938e)
+
+![IMG_20210704_164040518_HDR](https://github.com/user-attachments/assets/9a7ab931-01ee-4950-873d-fd99dc70e77c)
+
+![IMG_20250301_175141763](https://github.com/user-attachments/assets/45f678d4-57b9-4645-856f-83136568635a)
 
 ----------------
 
