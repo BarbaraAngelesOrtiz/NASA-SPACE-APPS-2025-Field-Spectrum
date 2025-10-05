@@ -280,7 +280,7 @@ Browser](https://apps.sentinel-hub.com/eo-browser/)
 
 ------
 
-##Author
+## Author
 
 **Bárbara Ángeles Ortiz** 
 
