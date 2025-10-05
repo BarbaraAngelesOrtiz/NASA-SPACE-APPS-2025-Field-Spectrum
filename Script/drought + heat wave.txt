@@ -1,0 +1,48 @@
+//VERSION=3
+// Proxy drought: NDVI + LST + Water + Clouds (LOTL1)
+
+function setup() {
+  return {
+    input: [
+      { bands: ["B03","B04","B05","B09","B10"], 
+        units: ["REFLECTANCE","REFLECTANCE","REFLECTANCE","REFLECTANCE","BRIGHTNESS_TEMPERATURE"] }
+    ],
+    output: { bands: 3 }
+  };
+}
+
+function clamp(v,a,b){ return Math.max(a,Math.min(b,v)); }
+
+function evaluatePixel(s) {
+  let green = s.B03;
+  let red   = s.B04;
+  let nir   = s.B05;
+  let cirrus = s.B09;
+  let bt    = s.B10;
+
+  // Simple cirrus cloud filter
+  if (cirrus > 0.01) return [0,0,0]; // negro = cloud
+
+  // NDVI
+  let ndvi = (nir - red)/(nir + red);
+  let ndviNorm = clamp((ndvi - 0.1)/0.7,0,1);
+
+  // NDWI for water
+  let ndwi = (green - nir)/(green + nir);
+  let waterMask = ndwi > 0.1;
+
+  // Normalized temperature
+  let tNorm = clamp((bt - 290)/(320-290),0,1);
+
+  // Initial colors
+  let R = tNorm;       // heat
+  let G = ndviNorm;    // vegetation
+  let B = 0;
+
+  // Blue water
+  if (waterMask) {
+    R=0.1; G=0.3; B=0.8;
+  }
+
+  return [R,G,B];
+}
