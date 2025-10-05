@@ -232,7 +232,7 @@ We developed two custom Landsat 8–9 scripts to reveal the physical drivers of 
 
 By transforming complex data into a clear visual narrative, the project delivers actionable insights for immediate disaster response and supports the long-term adaptation strategies essential for the resilience of the agricultural system.
 
-We extend our heartfelt thanks to NASA and the Space Apps community for providing a platform where personal stories, scientific inquiry, and global collaboration converge. This challenge empowered us to turn data into impact—and to honor the land and people who inspired this work. 
+We extend our heartfelt thanks to NASA and the Space Apps community for providing a platform where personal stories, scientific inquiry, and global collaboration converge. This challenge empowered us to turn data into impact and to honor the land and people who inspired this work. 
 
 ![WhatsApp Image 2025-10-05 at 11 20 00 PM](https://github.com/user-attachments/assets/02e1e5be-7924-4a29-b670-6f8c31619020)
 
