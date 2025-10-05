@@ -121,7 +121,7 @@ In the following figures it is possible to observe the evolution of the region b
 *Figure B. March 2025, Argentina (Santa Fe and Entre Rios Province)*
 
 ![AWS_LOTL1-1257623640140761-timelapse](https://github.com/user-attachments/assets/010cffaa-a358-469a-85ae-34ff33dd2261)
-*Timelapse December and April 2025, Argentina (Santa Fe and Entre Rios Province 25 km resolution)*
+<br> *Timelapse December and April 2025, Argentina (Santa Fe and Entre Rios Province 25 km resolution)*
 
 -   **Figure C (normal stage before the event, August 2024)**: The lagoon is at it normal extension, the region shows abundant vegetation and visible bodies of water, along with moderate temperatures (soft colours).
 
