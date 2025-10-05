@@ -277,3 +277,18 @@ Resolution Land Surface Temperature Maps in Urban Environment\]
 
 \[11\] [Sentinel Hub EO
 Browser](https://apps.sentinel-hub.com/eo-browser/)
+
+------
+
+##Author
+
+**Bárbara Ángeles Ortiz**
+** Emanual Rebot**
+**Andrea Ortiz**
+
+![Status](https://img.shields.io/badge/status-finished-brightgreen) 📅 October 2025
+
+## Acknowledgments
+
+<img width="665" height="321" alt="image" src="https://github.com/user-attachments/assets/bb325b41-57ff-4a5e-9021-0a261bf65eb3" />
+
