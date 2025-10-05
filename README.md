@@ -176,7 +176,7 @@ Uses both **spectral and thermal tests**:
 
 -   Brightness thresholds: B03, B04 \> 0.2
 
--   Thermal filter: very cold clouds B10 \< 265 K\ If any condition is met, the pixel is masked as cloud.
+-   Thermal filter: very cold clouds B10 \< 265 K If any condition is met, the pixel is masked as cloud.
 
 The cloudiness of the timelapse was filtered by 35%.
 
