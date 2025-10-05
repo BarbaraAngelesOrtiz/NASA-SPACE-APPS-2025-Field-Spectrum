@@ -134,11 +134,10 @@ In the following figures it is possible to observe the evolution of the region b
 *Figure D. January 2025, Mar Chiquita,Argentina (Cordoba Province)*
 
 ![AWS_LOTL1-379883988684818-timelapse](https://github.com/user-attachments/assets/f49d61bd-f300-422b-a72a-e2c15fad26ce)
-
-*Timelapse June 2024 to May 2025, Argentina (Mar Chiquita, 5 km resolution)*
+<br> *Timelapse June 2024 to May 2025, Argentina (Mar Chiquita, 5 km resolution)*
 
 ![AWS_LOTL1-588973063144651-timelapse](https://github.com/user-attachments/assets/86dc93ec-60a9-47a6-a66d-a91f796f93a9)
-*Timelapse June 2024 to May 2025, Argentina (Mar Chiquita, 10 km resolution)*
+<br> *Timelapse June 2024 to May 2025, Argentina (Mar Chiquita, 10 km resolution)*
 
 --------
 
@@ -156,21 +155,14 @@ This script isolates **cold zones** while filtering out clouds to avoid confusio
 
 -   **Bands used:**
 
-  ----------------------------------------------------------------------------
-  **Band**   **Description**   **Unit**                 **Purpose**
-  ---------- ----------------- ------------------------ ----------------------
-  B03        Green             Reflectance              Cloud detection (NDGR)
+| Band      | Description      | Unit                    | Purpose                 |
+|------------|------------------|--------------------------|--------------------------|
+| **B03**    | Green             | Reflectance              | Cloud detection (NDGR)   |
+| **B04**    | Red               | Reflectance              | NDGR / NDVI              |
+| **B05**    | Near Infrared     | Reflectance              | NDVI                     |
+| **B10**    | Thermal Infrared  | Brightness Temperature (K) | Frost detection        |
+| **dataMask** | Valid pixel mask | —                        | Masking invalid regions  |
 
-  B04        Red               Reflectance              NDGR / NDVI
-
-  B05        Near Infrared     Reflectance              NDVI
-
-  B10        Thermal Infrared  Brightness Temperature   Frost detection
-                               (K)                      
-
-  dataMask   Valid pixel mask  ---                      Masking invalid
-                                                        regions
-  ----------------------------------------------------------------------------
 
 ### Processing logic
 
@@ -226,7 +218,7 @@ In the following figures it is possible to observe the impact of a late frost re
 *Figure B. October 2024, Argentina (Santa Fe and Entre Rios Provinces)*
 
 ![AWS_LOTL1-1263704297926784-timelapse](https://github.com/user-attachments/assets/75b2ed2a-4dfe-4887-91e8-c0e683e1e6f3)
-*Timelapse September to November 2024, Argentina (Santa Fe and Entre Rios Province 25 km resolution)*
+<br> *Timelapse September to November 2024, Argentina (Santa Fe and Entre Rios Province 25 km resolution)*
 
 ## Conclusion
 
