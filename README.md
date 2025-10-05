@@ -18,6 +18,8 @@ To study these phenomena, two custom scripts were developed and executed using t
 
     -   **Target site:** Mar Chiquita, Córdoba Province, Argentina. Impacted by a prolonged dry period and extreme heatwave in January and February 2025.
 
+Here the [Drought and Heatwave script](./Script/drought%20%2B%20heat%20wave.txt)
+
 2.  **Frost Detection Script**
 
     -   **Indices and bands:** NDVI (B05-B04), Brightness Temperature (B10), dataMask
@@ -25,10 +27,14 @@ To study these phenomena, two custom scripts were developed and executed using t
     -   **Methodology:** Frost is identified as pixels with temperatures  below 0°C that are **not covered by clouds**. Cold zones are rendered with a **violet-blue gradient**, vegetation in green, and clouds masked to black.
 
     -   **Target site:** Entre Ríos and Santa Fe provinces, Argentina, affected by late-season frosts in September and October 2024.
+  
+Here the [Drought and Heatwave script](./Script/frost.txt)
 
 By combining these analyses, the scripts allow a **temporal visualization of extreme climatic events** on agricultural fields. EO Browser's time-lapse function highlights the evolution of heatwaves, droughts, and frost events, providing a **clear and visually compelling narrative** of climate impact on croplands.\[7\]\[8\]
 
 These visualizations can support **decision-making for agricultural management**, disaster response, and long-term adaptation strategies, providing actionable insights for farmers, policymakers, and environmental agencies. \[9\] \[10\]
+
+Here you can see satellite images and timelapses of the project: [satellite images](satellite%20images%20)
 
 --------
 
@@ -107,8 +113,6 @@ The thermal signal is normalized between 290 K (≈17 °C) and 320 K (≈47 °C)
 This combination enables temporal visualization in EO Browser time-lapse mode, allowing users to **observe the progression of droughts and heatwaves** across agricultural landscapes.
 
 ### Details of the script: Drought and Heatwave
-
-Here the [Drought and Heatwave script](./Script/drought%20%2B%20heat%20wave.txt)
 
 In the following figures it is possible to observe the evolution of the region before and after the heatwave event in Argentina.
 
@@ -207,7 +211,7 @@ The colder the pixel, the **more violet-blue** it appears.
 
 This visualization helps identify **localized frost events** and assess **potential agricultural damage**, separating cold land surfaces from high, cold clouds.
 
-### Details of the script: Drought and Heatwave: Frost
+### Details of the script: Frost
 
 In the following figures it is possible to observe the impact of a late frost registered in September/October 2024 in Argentina, when winter conditions unexpectedly extended into the beginning of the planting season.
 
