@@ -284,7 +284,7 @@ Browser](https://apps.sentinel-hub.com/eo-browser/)
 
 **Bárbara Ángeles Ortiz** 
 
-** Emanual Rebot** <br>
+**Emanual Rebot** <br>
 
 **Andrea Ortiz** 
 
