@@ -88,11 +88,11 @@ The thermal signal is normalized between 290 K (≈17 °C) and 320 K (≈47 °C)
 
 ### Color Composition
 
--   **Red (R):** Normalized temperature --- highlights heat stress
+-   **Red (R):** Normalized temperature, highlights heat stress
 
--   **Green (G):** NDVI --- vegetation health
+-   **Green (G):** NDVI, vegetation health
 
--   **Blue (B):** NDWI --- water presence
+-   **Blue (B):** NDWI, water presence
 
 ### Visual interpretation
 
