@@ -123,6 +123,8 @@ In the following figures it is possible to observe the evolution of the region b
 ![AWS_LOTL1-1257623640140761-timelapse](https://github.com/user-attachments/assets/010cffaa-a358-469a-85ae-34ff33dd2261)
 <br> *Timelapse December and April 2025, Argentina (Santa Fe and Entre Rios Province 25 km resolution)*
 
+Furthermore, the figures below show the evolution of drought in a lagoon called Mar Chiquita in Argentina last summer.
+
 -   **Figure C (normal stage before the event, August 2024)**: The lagoon is at it normal extension, the region shows abundant vegetation and visible bodies of water, along with moderate temperatures (soft colours).
 
 -   **Figure D (during the event, January 2025)**: At the peak of the drought and heatwave, the Mar Chiquita lagoon exhibits a marked reduction in surface area, extreme temperatures (red/white) and loss of vegetation cover (reduced green) on the fields surrounding it.
@@ -220,6 +222,8 @@ In the following figures it is possible to observe the impact of a late frost re
 ![AWS_LOTL1-1263704297926784-timelapse](https://github.com/user-attachments/assets/75b2ed2a-4dfe-4887-91e8-c0e683e1e6f3)
 <br> *Timelapse September to November 2024, Argentina (Santa Fe and Entre Rios Province 25 km resolution)*
 
+-----------
+
 ## Conclusion
 
 Rooted in a personal commitment to the Argentine farming community, this project met the core mission of the \"Through the Radar Looking Glass\" challenge by turning satellite observations into a vital diagnostic tool.
@@ -227,6 +231,8 @@ Rooted in a personal commitment to the Argentine farming community, this project
 We developed two custom Landsat 8--9 scripts to reveal the physical drivers of climate stress: one quantifying the collapse in crop health caused by historic drought and heatwave conditions, and the other providing a critical time-series analysis of damaging late-season frost events.
 
 By transforming complex data into a clear visual narrative, the project delivers actionable insights for immediate disaster response and supports the long-term adaptation strategies essential for the resilience of the agricultural system.
+
+----------------
 
 ## References
 
