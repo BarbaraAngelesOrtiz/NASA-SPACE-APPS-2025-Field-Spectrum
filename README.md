@@ -197,7 +197,7 @@ The colder the pixel, the **more violet-blue** it appears.
 
 -   **Green:** Vegetation
 
--   **Blue--Violet:** Frost / cold surfaces
+-   **Blue-Violet:** Frost / cold surfaces
 
 -   **Black:** Clouds
 
