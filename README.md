@@ -110,7 +110,7 @@ This combination enables temporal visualization in EO Browser time-lapse mode, a
 
 In the following figures it is possible to observe the evolution of the region before and after the heatwave event in Argentina.
 
--   **Figure A (during the event, early January 2025):** After the heat wave, extreme temperatures (red/white), loss of vegetation cover(reduced green), and drought indicators are observed.
+-   **Figure A (during the event, early January 2025):** After the heat wave, extreme temperatures (red/white), loss of vegetation cover (reduced green), and drought indicators are observed.
 
 -   **Figure B (during/after the event, March 2025):** The region shows abundant vegetation and visible bodies of water, along with moderate temperatures (soft colors).
 
