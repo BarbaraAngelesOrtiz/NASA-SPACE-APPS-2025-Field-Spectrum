@@ -282,9 +282,11 @@ Browser](https://apps.sentinel-hub.com/eo-browser/)
 
 ##Author
 
-**Bárbara Ángeles Ortiz** <\br>
-** Emanual Rebot** <\br>
-**Andrea Ortiz** <\br> 
+**Bárbara Ángeles Ortiz** 
+
+** Emanual Rebot** <br>
+
+**Andrea Ortiz** 
 
 ![Status](https://img.shields.io/badge/status-finished-brightgreen) 📅 October 2025
 
