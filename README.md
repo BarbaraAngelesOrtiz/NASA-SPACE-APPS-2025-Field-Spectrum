@@ -8,11 +8,11 @@ widespread stress in croplands, water scarcity, and reduced yields. \[1\]\[2\]\[
 
 Conversely, in **September/October 2024**, late-season frosts affected central and southern agricultural regions, with temperatures dropping as low as, 4°C, damaging sensitive crops and impacting local food production.\[5\]\[6\]
 
-To study these phenomena, two custom scripts were developed and executed using the **Sentinel Hub EO Browser tool**, leveraging **Landsat 8--9 OLI-TIRS Collection 2 Level 1** imagery and **Synthetic Aperture Radar (SAR) data**. The scripts are designed to visualize and monitor agricultural stress caused by extreme climatic events.\[11\]
+To study these phenomena, two custom scripts were developed and executed using the **Sentinel Hub EO Browser tool**, leveraging **Landsat 8-9 OLI-TIRS Collection 2 Level 1** imagery and **Synthetic Aperture Radar (SAR) data**. The scripts are designed to visualize and monitor agricultural stress caused by extreme climatic events.\[11\]
 
 1.  **Drought and Heatwave Script**
 
-    -   **Indices and bands:** NDVI (B05--B04), NDWI (B03--B05), Brightness Temperature (B10)
+    -   **Indices and bands:** NDVI (B05-B04), NDWI (B03-B05), Brightness Temperature (B10)
 
     -   **Methodology:** Vegetation stress is detected through NDVI, water bodies through NDWI, and surface heat via thermal infrared measurements. Pixels affected by drought or heat are highlighted in **red**, healthy vegetation in **green**, and water bodies in  **blue**. Cloud pixels are masked to black using the cirrus band (B09).
 
@@ -20,7 +20,7 @@ To study these phenomena, two custom scripts were developed and executed using t
 
 2.  **Frost Detection Script**
 
-    -   **Indices and bands:** NDVI (B05--B04), Brightness Temperature (B10), dataMask
+    -   **Indices and bands:** NDVI (B05-B04), Brightness Temperature (B10), dataMask
 
     -   **Methodology:** Frost is identified as pixels with temperatures  below 0°C that are **not covered by clouds**. Cold zones are rendered with a **violet-blue gradient**, vegetation in green, and clouds masked to black.
 
@@ -43,7 +43,7 @@ and dryness**.
 
 ### Satellite source
 
--   **Satellite:** Landsat 8--9 Level 1
+-   **Satellite:** Landsat 8-9 Level 1
 
 -   **Instruments:** OLI (Optical Land Imager) and TIRS (Thermal Infrared Sensor)
 
@@ -153,7 +153,7 @@ This script isolates **cold zones** while filtering out clouds to avoid confusio
 
 ### Satellite source
 
--   **Satellite:** Landsat 8--9 Level 1
+-   **Satellite:** Landsat 8-9 Level 1
 
 -   **Bands used:**
 
