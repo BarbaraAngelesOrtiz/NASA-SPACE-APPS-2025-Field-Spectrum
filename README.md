@@ -209,15 +209,15 @@ This visualization helps identify **localized frost events** and assess **potent
 
 In the following figures it is possible to observe the impact of a late frost registered in September/October 2024 in Argentina, when winter conditions unexpectedly extended into the beginning of the planting season.
 
--   **Figure A (reference image, September 2024):** vegetation shows signs of recovery after winter, represented in green tones, with no significant cold stress detected.
+-   **Figure E (reference image, September 2024):** vegetation shows signs of recovery after winter, represented in green tones, with no significant cold stress detected.
 
--   **Figure B (frost event, October 2024):** areas in blue tones indicate surface temperatures close to or below 0 °C, where frost occurred in croplands. The intensity of the blue scale highlights the most affected agricultural zones. This event represents a late frost that can damage early crops and delay the seasonal cycle.
+-   **Figure F (frost event, October 2024):** areas in blue tones indicate surface temperatures close to or below 0 °C, where frost occurred in croplands. The intensity of the blue scale highlights the most affected agricultural zones. This event represents a late frost that can damage early crops and delay the seasonal cycle.
 
 ![2024-09-16-00_00_2024-09-16-23_59_Landsat_8-9_L1_Custom_script](https://github.com/user-attachments/assets/c9953834-d01b-483e-850d-b59e30ec4d7d)
-*Figure A. September 2024, Argentina (Santa Fe and Entre Rios Provinces)*
+*Figure E. September 2024, Argentina (Santa Fe and Entre Rios Provinces)*
 
 ![2024-10-18-00_00_2024-10-18-23_59_Landsat_8-9_L1_Custom_script](https://github.com/user-attachments/assets/1b07845b-f5f8-41d2-b3ce-16c3e002e57c)
-*Figure B. October 2024, Argentina (Santa Fe and Entre Rios Provinces)*
+*Figure F. October 2024, Argentina (Santa Fe and Entre Rios Provinces)*
 
 ![AWS_LOTL1-1263704297926784-timelapse](https://github.com/user-attachments/assets/75b2ed2a-4dfe-4887-91e8-c0e683e1e6f3)
 <br> *Timelapse September to November 2024, Argentina (Santa Fe and Entre Rios Province 25 km resolution)*
