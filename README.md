@@ -84,7 +84,7 @@ NDWI \> 0.1 identifies water bodies, which are rendered in blue to distinguish r
 
 Band 10 provides **Brightness Temperature (BT)**, used as a proxy for land surface temperature.
 
-The thermal signal is normalized between 290 K (≈17 °C) and 320 K (≈47 °C).\ Higher normalized temperature values correspond to **heatwave conditions**.
+The thermal signal is normalized between 290 K (≈17 °C) and 320 K (≈47 °C). Higher normalized temperature values correspond to **heatwave conditions**.
 
 ### Color Composition
 
