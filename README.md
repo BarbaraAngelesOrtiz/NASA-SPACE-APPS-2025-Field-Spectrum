@@ -191,8 +191,8 @@ This visualization helps identify **localized frost events** and assess **potent
 
 Sentinel-1 captures data using C-band Synthetic Aperture Radar (SAR) in two main polarizations:
 
-• VV (Vertical transmit & Vertical receive), sensitive to surface roughness and moisture, ideal for open fields. <br>
-• VH (Vertical transmit & Horizontal receive), sensitive to vegetation structure and volume scattering.
+-  VV (Vertical transmit & Vertical receive), sensitive to surface roughness and moisture, ideal for open fields. <br>
+-  VH (Vertical transmit & Horizontal receive), sensitive to vegetation structure and volume scattering.
 
 For agricultural monitoring, the VV polarization is used to highlight soil moisture and frost-related surface changes.
 
@@ -209,9 +209,9 @@ The values are normalized between –25 dB (very low reflectance, smooth or wet 
 
 4. **Frost and Moisture Detection**
 
-- • Low σ⁰ values (–25 to –15 dB) → indicate wet soil or thawed conditions.
+-  Low σ⁰ values (–25 to –15 dB) → indicate wet soil or thawed conditions.
 
-- • High σ⁰ values (–10 to 0 dB) → indicate frozen or dry soil, due to increased surface roughness.
+-  High σ⁰ values (–10 to 0 dB) → indicate frozen or dry soil, due to increased surface roughness.
 
 Temporal changes in backscatter (Δσ⁰) between consecutive acquisitions are used to detect sudden increases in reflectivity, typical of frost events.
 
@@ -237,9 +237,9 @@ Bodies of water in bright blue, clearly differentiated.
 
 In EO Browser time-lapse mode, changes in backscatter intensity across multiple Sentinel-1 acquisitions allow visualization of:
 
-- • Onset and retreat of frost events. <br> 
-- • Soil moisture variations after precipitation or thaw. <br> 
-- • Structural changes in crops under cold stress. <br>
+-  Onset and retreat of frost events. <br> 
+-  Soil moisture variations after precipitation or thaw. <br> 
+-  Structural changes in crops under cold stress. <br>
 
 ### Details of the script: Frost Sentinel 1
 
