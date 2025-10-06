@@ -8,7 +8,7 @@ widespread stress in croplands, water scarcity, and reduced yields. \[1\]\[2\]\[
 
 Conversely, in **September/October 2024**, late-season frosts affected central and southern agricultural regions, with temperatures dropping as low as, 4°C, damaging sensitive crops and impacting local food production.\[5\]\[6\]
 
-To study these phenomena, two custom scripts were developed and executed using the **Sentinel Hub EO Browser tool**, leveraging **Landsat 8-9 OLI-TIRS Collection 2 Level 1** imagery and **Synthetic Aperture Radar (SAR) data**. The scripts are designed to visualize and monitor agricultural stress caused by extreme climatic events.\[11\]
+To study these phenomena, two custom scripts were developed and executed using the **Sentinel Hub EO Browser tool**, leveraging **Landsat 8-9 OLI-TIRS Collection 2 Level 1** imagery and **Sentinel 1 Synthetic Aperture Radar (SAR) data**. The scripts are designed to visualize and monitor agricultural stress caused by extreme climatic events.\[11\]
 
 1.  **Drought and Heatwave Script**
 
@@ -22,13 +22,24 @@ Here the [Drought and Heatwave script](./Script/drought%20%2B%20heat%20wave.txt)
 
 2.  **Frost Detection Script**
 
-    -   **Indices and bands:** NDVI (B05-B04), Brightness Temperature (B10), dataMask
+    -   **Indices and bands:** VV (Vertical transmit, Vertical receive) and VH (Vertical transmit, Horizontal receive) backscatter bands from Sentinel-1. These bands capture structural and dielectric changes in vegetation, which are sensitive to frost and ice damage. No optical bands are used, so detection works independently of clouds or sunlight.
 
-    -   **Methodology:** Frost is identified as pixels with temperatures  below 0°C that are **not covered by clouds**. Cold zones are rendered with a **violet-blue gradient**, vegetation in green, and clouds masked to black.
+    -   **Methodology:**
+    
+• Frost Proxy: Frost stress reduces the VH backscatter due to ice formation and loss of canopy structure. We normalize VH values to calculate a frost index.
+• VV/VH Ratio: Structural changes in vegetation also modify the VV/VH ratio. A normalized ratio is combined with the frost index to enhance detection.
+• Water Detection: Low VV and VH values indicate water bodies; these are masked and displayed in cyan.
+• Classification and Visualization:
 
+1. Frost-damaged areas are shown in violet-blue.
+2. Vegetation or moist soil is shown in greenish tones.
+3. Bare soil or dry areas are shown in brownish-gray.
+4. Water bodies appear cyan.
+
+This allows visual identification of frost-affected crops, normal vegetation, dry land, and water in a single composite.
     -   **Target site:** Entre Ríos and Santa Fe provinces, Argentina, affected by late-season frosts in September and October 2024.
   
-Here the [Frost Landsat 8-9 script](./Script/frost.txt) and [Frost Sentinel 1 script](./Script/frost.txt)
+Here the [Frost Sentinel 1 script](./Script/frost.txt)
 
 By combining these analyses, the scripts allow a **temporal visualization of extreme climatic events** on agricultural fields. EO Browser's time-lapse function highlights the evolution of heatwaves, droughts, and frost events, providing a **clear and visually compelling narrative** of climate impact on croplands.\[7\]\[8\]
 
