@@ -168,74 +168,11 @@ This script isolates **cold zones** while filtering out clouds to avoid confusio
 
 ### Satellite source
 
--   **Satellite:** Landsat 8-9 Level 1 and Sentinel 1
-
--   **Bands used:**
-
-| Band      | Description      | Unit                    | Purpose                 |
-|------------|------------------|--------------------------|--------------------------|
-| **B03**    | Green             | Reflectance              | Cloud detection (NDGR)   |
-| **B04**    | Red               | Reflectance              | NDGR / NDVI              |
-| **B05**    | Near Infrared     | Reflectance              | NDVI                     |
-| **B10**    | Thermal Infrared  | Brightness Temperature (K) | Frost detection        |
-| **dataMask** | Valid pixel mask | —                        | Masking invalid regions  |
-
-
-### Processing logic Landsat 8-9 Level 
-
-1.  **Cloud Detection**
-
-Uses both **spectral and thermal tests**:
-
--   NDGR = (B03 − B04) / (B03 + B04)
-
--   Brightness thresholds: B03, B04 \> 0.2
-
--   Thermal filter: very cold clouds B10 \< 265 K If any condition is met, the pixel is masked as cloud.
-
-The cloudiness of the timelapse was filtered by 35%.
-
-2.  **Vegetation Index (NDVI)**
-
-Keeps natural green tones for cropland and vegetation under normal temperature.
-
-3.  **Frost Detection**
-
-Pixels where B10 \< 273 K (0 °C) and **no clouds** are detected are considered frost-affected.
-
-4.  **Thermal Gradient**
-
-Temperatures between **265 K (−8 °C)** and **273 K (0 °C)** are normalized.\
-The colder the pixel, the **more violet-blue** it appears.
-
-### Color Composition
-
--   **Green:** Vegetation
-
--   **Blue-Violet:** Frost / cold surfaces
-
--   **Black:** Clouds
+-   **Satellite:**  Sentinel 1
 
 ### Visual interpretation
 
 This visualization helps identify **localized frost events** and assess **potential agricultural damage**, separating cold land surfaces from high, cold clouds.
-
-### Details of the script: Frost
-
-In the following figures it is possible to observe the impact of a late frost registered in September/October 2024 in Argentina, when winter conditions unexpectedly extended into the beginning of the planting season.
-
--   **Figure E (reference image, September 2024):** vegetation shows signs of recovery after winter, represented in green tones, with no significant cold stress detected.
-
--   **Figure F (frost event, October 2024):** areas in blue tones indicate surface temperatures close to or below 0 °C, where frost occurred in croplands. The intensity of the blue scale highlights the most affected agricultural zones. This event represents a late frost that can damage early crops and delay the seasonal cycle.
-
-![2024-09-16-00_00_2024-09-16-23_59_Landsat_8-9_L1_Custom_script](https://github.com/user-attachments/assets/c9953834-d01b-483e-850d-b59e30ec4d7d)
-*Figure E. September 2024, Argentina (Santa Fe and Entre Rios Provinces)*
-
-![2024-10-18-00_00_2024-10-18-23_59_Landsat_8-9_L1_Custom_script](https://github.com/user-attachments/assets/1b07845b-f5f8-41d2-b3ce-16c3e002e57c)
-*Figure F. October 2024, Argentina (Santa Fe and Entre Rios Provinces)*
-
-![AWS_LOTL1-1263704297926784-timelapse](https://github.com/user-attachments/assets/75b2ed2a-4dfe-4887-91e8-c0e683e1e6f3)
-<br> *Timelapse September to November 2024, Argentina (Santa Fe and Entre Rios Province 25 km resolution)*
 
 ### Processing logic Sentinel 1
 
@@ -243,8 +180,8 @@ In the following figures it is possible to observe the impact of a late frost re
 
 Sentinel-1 captures data using C-band Synthetic Aperture Radar (SAR) in two main polarizations:
 
-• VV (Vertical transmit & Vertical receive) — sensitive to surface roughness and moisture, ideal for open fields.
-• VH (Vertical transmit & Horizontal receive) — sensitive to vegetation structure and volume scattering.
+• VV (Vertical transmit & Vertical receive), sensitive to surface roughness and moisture, ideal for open fields.
+• VH (Vertical transmit & Horizontal receive), sensitive to vegetation structure and volume scattering.
 
 For agricultural monitoring, the VV polarization is used to highlight soil moisture and frost-related surface changes.
 
@@ -278,10 +215,12 @@ Temporal changes in backscatter (Δσ⁰) between consecutive acquisitions are u
 
 6. **Visual Interpretation**
 
-❄️ Bright white or red areas: Frozen fields or frost-affected zones.
+⚪️ Bodies of water in bright blue
 🟢 Green areas: Vegetated and structurally complex surfaces.
-🔵 Blue tones: Moist soil or post-frost thaw.
-⚫ Black: Radar shadows or low-signal areas (water, smooth terrain).
+🔵 Blue-violet hues: Damp soil or thawing after frost.
+⚫ Black: Radar shadows or areas with low signal (water, flat terrain).
+
+Bodies of water in bright blue, clearly differentiated.
 
 7. **Temporal Analysis**
 
@@ -291,11 +230,18 @@ In EO Browser time-lapse mode, changes in backscatter intensity across multiple 
 • Soil moisture variations after precipitation or thaw
 • Structural changes in crops under cold stress
 
-### Details of the script: Frost
+### Details of the script: Frost Sentinel 1
 
 The map highlights the consequences of a late frost event in Argentina during September and October 2024, when unexpected cold conditions damaged crops at the start of the planting period.
 
-![S1_AWS_IW_VVVH-562160586477406-timelapse](https://github.com/user-attachments/assets/bbbcc125-bc81-471b-83de-6acbcd85c771)
+![2024-09-23-00_00_2024-09-23-23_59_Sentinel-1_AWS-IW-VVVH_Custom_script](https://github.com/user-attachments/assets/2a849353-f955-4faf-b679-c69730d65435)
+*Figure E. September 2024, Argentina (Santa Fe and Entre Rios Provinces)*
+
+![2024-10-17-00_00_2024-10-17-23_59_Sentinel-1_AWS-IW-VVVH_Custom_script](https://github.com/user-attachments/assets/fe109495-6371-4ee2-a3dc-28628c885908)
+*Figure F. October 2024, Argentina (Santa Fe and Entre Rios Provinces)*
+
+![S1_AWS_IW_VVVH-1722894706707662-timelapse](https://github.com/user-attachments/assets/fdb02f53-4ad5-4e2f-a151-425029fc5072)
+
 *Timelapse December and April 2025, Argentina (Santa Fe and Entre Rios Province 25 km resolution)*
 
 -----------
