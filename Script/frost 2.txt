@@ -1,6 +1,6 @@
 //VERSION=3
-// Sentinel-1 Frost Impact Proxy Visualization
-// Detects structural damage in vegetation caused by frost via VH and VV backscatter
+// Sentinel-1 Frost and Water Enhanced Visualization
+// Highlights frost damage (violet-blue), water (cyan), and normal land (green/brown tones)
 
 function setup() {
   return {
@@ -14,29 +14,46 @@ function clamp(x, a, b) {
 }
 
 function evaluatePixel(sample) {
-  // Convert from linear to dB
+  // Convert linear to dB
   let vv = 10 * Math.log10(sample.VV);
   let vh = 10 * Math.log10(sample.VH);
 
-  // Frost proxy: VH tends to drop under freezing stress
-  // Typical VH values for healthy crops: -14 to -18 dB
-  // Lower values (< -19 dB) may indicate ice damage or dry canopy
-  let frostIndex = clamp((-19 - vh) / 6, 0, 1);
+  // --- Water detection ---
+  let waterMask = vv < -19 && vh < -23;
 
-  // Ratio VV/VH also changes with structure loss
+  // --- Frost proxy ---
+  let frostIndex = clamp((-19 - vh) / 6, 0, 1);
   let ratio = vv - vh;
   let ratioNorm = clamp((ratio - 4) / 10, 0, 1);
-
-  // Combine both effects
   let frostScore = clamp((frostIndex * 0.6 + (1 - ratioNorm) * 0.4), 0, 1);
 
-  // Visualization:
-  // Blue → probable frost damage
-  // Green → normal vegetation
-  // Gray → bare soil or mixed
-  let R = 0.3 * (1 - frostScore);
-  let G = 0.5 * (1 - frostScore);
-  let B = frostScore;
+  // --- Base classification ---
+  // Estimate surface type: vegetation/soil based on VV reflectivity
+  let vegetationMask = vv > -15 && vh > -20; // stronger returns → vegetation/rough terrain
+
+  let R, G, B;
+
+  if (waterMask) {
+    // Cyan for water
+    R = 0.1;
+    G = 0.7;
+    B = 0.95;
+  } else if (frostScore > 0.4) {
+    // Frost areas: violet-blue
+    R = 0.6 * frostScore;
+    G = 0.3 * (1 - frostScore);
+    B = 0.9;
+  } else if (vegetationMask) {
+    // Vegetation or moist soil: greenish
+    R = 0.3;
+    G = 0.6;
+    B = 0.3;
+  } else {
+    // Bare soil or dry areas: brownish-gray
+    R = 0.5;
+    G = 0.4;
+    B = 0.3;
+  }
 
   return [R, G, B];
 }
