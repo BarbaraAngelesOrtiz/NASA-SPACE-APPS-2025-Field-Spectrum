@@ -58,7 +58,7 @@ and dryness**.
 
 ### Satellite source
 
--   **Satellite:** Landsat 8-9 Level 1
+-   **Satellite:** Landsat 8-9 Level 1 
 
 -   **Instruments:** OLI (Optical Land Imager) and TIRS (Thermal Infrared Sensor)
 
@@ -75,7 +75,7 @@ and dryness**.
 | B10  | Thermal Infrared (10.6–11.19 µm) | Brightness Temperature (K) | Surface temperature estimation |
 
 
-### Processing logic
+### Processing logic Landsat 8-9 
 
 1.  **Cloud Masking**
 
@@ -168,7 +168,7 @@ This script isolates **cold zones** while filtering out clouds to avoid confusio
 
 ### Satellite source
 
--   **Satellite:** Landsat 8-9 Level 1
+-   **Satellite:** Landsat 8-9 Level 1 and Sentinel 1
 
 -   **Bands used:**
 
@@ -181,7 +181,7 @@ This script isolates **cold zones** while filtering out clouds to avoid confusio
 | **dataMask** | Valid pixel mask | —                        | Masking invalid regions  |
 
 
-### Processing logic
+### Processing logic Landsat 8-9 Level 
 
 1.  **Cloud Detection**
 
@@ -237,13 +237,68 @@ In the following figures it is possible to observe the impact of a late frost re
 ![AWS_LOTL1-1263704297926784-timelapse](https://github.com/user-attachments/assets/75b2ed2a-4dfe-4887-91e8-c0e683e1e6f3)
 <br> *Timelapse September to November 2024, Argentina (Santa Fe and Entre Rios Province 25 km resolution)*
 
+### Processing logic Sentinel 1
+
+1. **Radar Backscatter Selection**
+
+Sentinel-1 captures data using C-band Synthetic Aperture Radar (SAR) in two main polarizations:
+
+VV (Vertical transmit & Vertical receive) — sensitive to surface roughness and moisture, ideal for open fields.
+
+VH (Vertical transmit & Horizontal receive) — sensitive to vegetation structure and volume scattering.
+
+For agricultural monitoring, the VV polarization is used to highlight soil moisture and frost-related surface changes.
+
+2. **Speckle Reduction**
+
+SAR imagery often contains granular “speckle” noise due to radar interference.
+A Lee filter (3×3 window) is applied to smooth the image while preserving structural information, improving visibility of frost-affected areas.
+
+3. **Backscatter Normalization**
+
+Radar intensity (σ⁰) values are converted to decibels (dB) using:
+
+The values are normalized between –25 dB (very low reflectance, smooth or wet surfaces) and 0 dB (high reflectance, rough or frozen surfaces).
+
+4. **Frost and Moisture Detection**
+
+Low σ⁰ values (–25 to –15 dB) → indicate wet soil or thawed conditions.
+
+High σ⁰ values (–10 to 0 dB) → indicate frozen or dry soil, due to increased surface roughness.
+
+Temporal changes in backscatter (Δσ⁰) between consecutive acquisitions are used to detect sudden increases in reflectivity, typical of frost events.
+
+5. **Color Composition**
+   
+| Channel       | Data Source                  | Description                           |
+| ------------- | ---------------------------- | ------------------------------------- |
+| **Red (R)**   | VV backscatter (high values) | Highlights **frozen or dry surfaces** |
+| **Green (G)** | VH backscatter               | Indicates **vegetation structure**    |
+| **Blue (B)**  | VV/VH ratio                  | Enhances **moisture contrast**        |
+
+
+6. **Visual Interpretation**
+
+❄️ Bright white or red areas: Frozen fields or frost-affected zones.
+🟢 Green areas: Vegetated and structurally complex surfaces.
+🔵 Blue tones: Moist soil or post-frost thaw.
+⚫ Black: Radar shadows or low-signal areas (water, smooth terrain).
+
+7. **Temporal Analysis**
+
+In EO Browser time-lapse mode, changes in backscatter intensity across multiple Sentinel-1 acquisitions allow visualization of:
+
+• Onset and retreat of frost events
+• Soil moisture variations after precipitation or thaw
+• Structural changes in crops under cold stress
+
 -----------
 
 ## Conclusion
 
 The investigation, "Fields between drought, heat waves and frost: Observing changes in agriculture from space," was driven by a personal urgency rooted in the Argentine farming communities impacted by climate extremes, directly addressing the core mission of the "Through the Radar Looking Glass" challenge by turning satellite observations into a vital diagnostic tool. 
 
-We developed two custom Landsat 8–9 scripts to reveal the physical drivers of climate stress: one quantifying the collapse in crop health caused by historic drought and heatwave conditions, and the other providing a critical time-series analysis of damaging late-season frost events. 
+We developed two custom Landsat 8–9 and Sentinel 1 scripts to reveal the physical drivers of climate stress: one quantifying the collapse in crop health caused by historic drought and heatwave conditions, and the other providing a critical time-series analysis of damaging late-season frost events. 
 
 By transforming complex data into a clear visual narrative, the project delivers actionable insights for immediate disaster response and supports the long-term adaptation strategies essential for the resilience of the agricultural system.
 
