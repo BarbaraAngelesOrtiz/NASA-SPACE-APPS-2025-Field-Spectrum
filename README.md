@@ -191,7 +191,7 @@ This visualization helps identify **localized frost events** and assess **potent
 
 Sentinel-1 captures data using C-band Synthetic Aperture Radar (SAR) in two main polarizations:
 
-• VV (Vertical transmit & Vertical receive), sensitive to surface roughness and moisture, ideal for open fields.
+• VV (Vertical transmit & Vertical receive), sensitive to surface roughness and moisture, ideal for open fields. <br>
 • VH (Vertical transmit & Horizontal receive), sensitive to vegetation structure and volume scattering.
 
 For agricultural monitoring, the VV polarization is used to highlight soil moisture and frost-related surface changes.
