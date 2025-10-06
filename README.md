@@ -10,12 +10,16 @@ Conversely, in **September/October 2024**, late-season frosts affected central a
 
 To study these phenomena, two custom scripts were developed and executed using the **Sentinel Hub EO Browser tool**, leveraging **Landsat 8-9 OLI-TIRS Collection 2 Level 1** imagery and **Synthetic Aperture Radar (SAR) data**. The scripts are designed to visualize and monitor agricultural stress caused by extreme climatic events.\[11\]
 
+------
+
 ## 🌍 Interactive StoryMap
 Discover the full visual story on ArcGIS StoryMaps:
 
 👉 [Explore the StoryMap here](https://arcg.is/DDzrq)
 
 🧷[Video demo](https://youtu.be/qiBGMtHuyf0)
+
+-------
 
 1.  **Drought and Heatwave Script**
 
