@@ -54,7 +54,7 @@ Discover the full visual story on ArcGIS StoryMaps:
 
 👉 [Explore the StoryMap here](https://arcg.is/DDzrq)
 
-🧷[Video demo](https://youtu.be/qiBGMtHuyf0)
+🧷[Video demo](https://youtu.be/1f629PLWDLM)
 
 --------
 
