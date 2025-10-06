@@ -52,7 +52,7 @@ Here you can see satellite images and timelapses of the project: [satellite imag
 ## 🌍 Interactive StoryMap and Video 
 Discover the full visual story on ArcGIS StoryMaps:
 
-👉 [Explore the StoryMap here](https://arcg.is/DDzrq)
+👉 [Explore the StoryMap here](https://arcg.is/DDzrq) 
 
 🧷[Video demo](https://youtu.be/1f629PLWDLM)
 
