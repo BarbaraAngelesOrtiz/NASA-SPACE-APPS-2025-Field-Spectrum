@@ -226,10 +226,10 @@ Temporal changes in backscatter (Δσ⁰) between consecutive acquisitions are u
 
 6. **Visual Interpretation**
 
-⚪️ Bodies of water in bright blue
-🟢 Green areas: Vegetated and structurally complex surfaces.
-🔵 Blue-violet hues: Damp soil or thawing after frost.
-⚫ Black: Radar shadows or areas with low signal (water, flat terrain).
+⚪️ Bodies of water in bright blue. <br>
+🟢 Green areas: Vegetated and structurally complex surfaces. <br>
+🔵 Blue-violet hues: Damp soil or thawing after frost. <br>
+⚫ Black: Radar shadows or areas with low signal (water, flat terrain). <br>
 
 Bodies of water in bright blue, clearly differentiated.
 
@@ -237,9 +237,9 @@ Bodies of water in bright blue, clearly differentiated.
 
 In EO Browser time-lapse mode, changes in backscatter intensity across multiple Sentinel-1 acquisitions allow visualization of:
 
-• Onset and retreat of frost events
-• Soil moisture variations after precipitation or thaw
-• Structural changes in crops under cold stress
+• Onset and retreat of frost events. <br> 
+• Soil moisture variations after precipitation or thaw. <br> 
+• Structural changes in crops under cold stress. <br>
 
 ### Details of the script: Frost Sentinel 1
 
