@@ -209,9 +209,9 @@ The values are normalized between –25 dB (very low reflectance, smooth or wet 
 
 4. **Frost and Moisture Detection**
 
-• Low σ⁰ values (–25 to –15 dB) → indicate wet soil or thawed conditions.
+- • Low σ⁰ values (–25 to –15 dB) → indicate wet soil or thawed conditions.
 
-• High σ⁰ values (–10 to 0 dB) → indicate frozen or dry soil, due to increased surface roughness.
+- • High σ⁰ values (–10 to 0 dB) → indicate frozen or dry soil, due to increased surface roughness.
 
 Temporal changes in backscatter (Δσ⁰) between consecutive acquisitions are used to detect sudden increases in reflectivity, typical of frost events.
 
@@ -226,10 +226,10 @@ Temporal changes in backscatter (Δσ⁰) between consecutive acquisitions are u
 
 6. **Visual Interpretation**
 
-⚪️ Bodies of water in bright blue. <br>
-🟢 Green areas: Vegetated and structurally complex surfaces. <br>
-🔵 Blue-violet hues: Damp soil or thawing after frost. <br>
-⚫ Black: Radar shadows or areas with low signal (water, flat terrain). <br>
+- ⚪️ Bodies of water in bright blue. <br>
+- 🟢 Green areas: Vegetated and structurally complex surfaces. <br>
+- 🔵 Blue-violet hues: Damp soil or thawing after frost. <br>
+- ⚫ Black: Radar shadows or areas with low signal (water, flat terrain). <br>
 
 Bodies of water in bright blue, clearly differentiated.
 
@@ -237,9 +237,9 @@ Bodies of water in bright blue, clearly differentiated.
 
 In EO Browser time-lapse mode, changes in backscatter intensity across multiple Sentinel-1 acquisitions allow visualization of:
 
-• Onset and retreat of frost events. <br> 
-• Soil moisture variations after precipitation or thaw. <br> 
-• Structural changes in crops under cold stress. <br>
+- • Onset and retreat of frost events. <br> 
+- • Soil moisture variations after precipitation or thaw. <br> 
+- • Structural changes in crops under cold stress. <br>
 
 ### Details of the script: Frost Sentinel 1
 
