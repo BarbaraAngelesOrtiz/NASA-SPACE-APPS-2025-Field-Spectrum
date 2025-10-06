@@ -1,7 +1,7 @@
 # 🌎 NASA Space Apps Challenge 2025 Field-Spectrum
 # 🛰️ Technical Methodology: Heatwaves and Droughts in Agricultural Fields 
 
-[Video demo] (https://youtu.be/qiBGMtHuyf0)
+[Video demo](https://youtu.be/qiBGMtHuyf0)
 
 ## General Description of the Scripts
 
