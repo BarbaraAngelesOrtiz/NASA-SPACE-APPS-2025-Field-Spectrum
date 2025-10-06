@@ -1,6 +1,5 @@
 //VERSION=3
 // Sentinel-1 Frost and Water Enhanced Visualization
-// Highlights frost damage (violet-blue), water (cyan), and normal land (green/brown tones)
 
 function setup() {
   return {
@@ -29,7 +28,7 @@ function evaluatePixel(sample) {
 
   //  Base classification 
   // Estimate surface type: vegetation/soil based on VV reflectivity
-  let vegetationMask = vv > -15 && vh > -20; // stronger returns → vegetation/rough terrain
+  let vegetationMask = vv > -15 && vh > -20; 
 
   let R, G, B;
 
@@ -57,4 +56,5 @@ function evaluatePixel(sample) {
 
   return [R, G, B];
 }
+
 
