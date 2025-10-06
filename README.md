@@ -291,6 +291,13 @@ In EO Browser time-lapse mode, changes in backscatter intensity across multiple 
 • Soil moisture variations after precipitation or thaw
 • Structural changes in crops under cold stress
 
+### Details of the script: Frost
+
+The map highlights the consequences of a late frost event in Argentina during September and October 2024, when unexpected cold conditions damaged crops at the start of the planting period.
+
+![S1_AWS_IW_VVVH-562160586477406-timelapse](https://github.com/user-attachments/assets/bbbcc125-bc81-471b-83de-6acbcd85c771)
+*Timelapse December and April 2025, Argentina (Santa Fe and Entre Rios Province 25 km resolution)*
+
 -----------
 
 ## Conclusion
