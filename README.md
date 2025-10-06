@@ -1,5 +1,5 @@
 # 🌎 NASA Space Apps Challenge 2025 Field-Spectrum
-# 🛰️ Technical Methodology: Heatwaves and Droughts in Agricultural Fields 
+# 🛰️ Fields Under Stress: Climate Impacts on Agriculture
 
 ## General Description of the Scripts
 
@@ -38,7 +38,7 @@ Here you can see satellite images and timelapses of the project: [satellite imag
 
 ------
 
-## 🌍 Interactive StoryMap
+## 🌍 Interactive StoryMap and Video 
 Discover the full visual story on ArcGIS StoryMaps:
 
 👉 [Explore the StoryMap here](https://arcg.is/DDzrq)
