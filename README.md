@@ -1,8 +1,6 @@
 # 🌎 NASA Space Apps Challenge 2025 Field-Spectrum
 # 🛰️ Technical Methodology: Heatwaves and Droughts in Agricultural Fields 
 
-[Video demo](https://youtu.be/qiBGMtHuyf0)
-
 ## General Description of the Scripts
 
 In recent years, Argentina has faced increasingly extreme climatic events, affecting both natural ecosystems and agricultural production. In **January/February 2025**, a historic heatwave swept across central and northeastern Argentina, with temperatures soaring above 40°C (104°F). This extreme heat, combined with prolonged drought, caused
@@ -37,6 +35,8 @@ By combining these analyses, the scripts allow a **temporal visualization of ext
 These visualizations can support **decision-making for agricultural management**, disaster response, and long-term adaptation strategies, providing actionable insights for farmers, policymakers, and environmental agencies. \[9\] \[10\]
 
 Here you can see satellite images and timelapses of the project: [satellite images](satellite%20images%20)
+
+🧷[Video demo](https://youtu.be/qiBGMtHuyf0)
 
 --------
 
