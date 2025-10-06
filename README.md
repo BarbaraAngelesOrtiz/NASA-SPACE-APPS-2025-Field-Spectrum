@@ -253,7 +253,7 @@ The map highlights the consequences of a late frost event in Argentina during Se
 
 ![S1_AWS_IW_VVVH-1722894706707662-timelapse](https://github.com/user-attachments/assets/fdb02f53-4ad5-4e2f-a151-425029fc5072)
 
-*Timelapse December and April 2025, Argentina (Santa Fe and Entre Rios Province 25 km resolution)*
+*Timelapse July to October 2024, Argentina (Santa Fe and Entre Rios Province 25 km resolution)*
 
 -----------
 
