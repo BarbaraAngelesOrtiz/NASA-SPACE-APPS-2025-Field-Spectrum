@@ -28,7 +28,7 @@ Here the [Drought and Heatwave script](./Script/drought%20%2B%20heat%20wave.txt)
 
     -   **Target site:** Entre Ríos and Santa Fe provinces, Argentina, affected by late-season frosts in September and October 2024.
   
-Here the [Frost script](./Script/frost.txt)
+Here the [Frost Landsat 8-9 script](./Script/frost.txt)
 
 By combining these analyses, the scripts allow a **temporal visualization of extreme climatic events** on agricultural fields. EO Browser's time-lapse function highlights the evolution of heatwaves, droughts, and frost events, providing a **clear and visually compelling narrative** of climate impact on croplands.\[7\]\[8\]
 
