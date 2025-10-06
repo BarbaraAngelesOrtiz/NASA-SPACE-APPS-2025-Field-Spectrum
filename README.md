@@ -287,11 +287,17 @@ Resolution Land Surface Temperature Maps in Urban Environment\]
 Browser](https://apps.sentinel-hub.com/eo-browser/)
 
 \[12\] Synthetic Aperture Radar (SAR), <https://www.earthdata.nasa.gov/learn/earth-observation-data-basics/sar>
+
 \[13\] NASA Applied Remote Sensing Training (ARSET) Trainings, <https://appliedsciences.nasa.gov/get-involved/training>
+
 \[14\] SAR Storymaps, <https://science.nasa.gov/mission/nisar/arcgis-storymaps/>
+
 \[15\] NASA-ISRO SAR Mission (NISAR) Applications White Papers, <https://science.nasa.gov/mission/nisar/societal-benefits/>
+
 \[16\] Intro to Remote Sensing, <https://www.earthdata.nasa.gov/learn/earth-observation-data-basics/remote-sensing>
+
 \[17\] SAOCOM Catalogue, <https://catalogos.conae.gov.ar/catalogo/catalogoSaocomInfo.html>
+
 ------
 
 ## Author
