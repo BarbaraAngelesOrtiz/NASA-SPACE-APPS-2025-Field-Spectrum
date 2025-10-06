@@ -1,0 +1,42 @@
+//VERSION=3
+// Sentinel-1 Frost Impact Proxy Visualization
+// Detects structural damage in vegetation caused by frost via VH and VV backscatter
+
+function setup() {
+  return {
+    input: ["VV", "VH"],
+    output: { bands: 3 }
+  };
+}
+
+function clamp(x, a, b) {
+  return Math.max(a, Math.min(b, x));
+}
+
+function evaluatePixel(sample) {
+  // Convert from linear to dB
+  let vv = 10 * Math.log10(sample.VV);
+  let vh = 10 * Math.log10(sample.VH);
+
+  // Frost proxy: VH tends to drop under freezing stress
+  // Typical VH values for healthy crops: -14 to -18 dB
+  // Lower values (< -19 dB) may indicate ice damage or dry canopy
+  let frostIndex = clamp((-19 - vh) / 6, 0, 1);
+
+  // Ratio VV/VH also changes with structure loss
+  let ratio = vv - vh;
+  let ratioNorm = clamp((ratio - 4) / 10, 0, 1);
+
+  // Combine both effects
+  let frostScore = clamp((frostIndex * 0.6 + (1 - ratioNorm) * 0.4), 0, 1);
+
+  // Visualization:
+  // Blue → probable frost damage
+  // Green → normal vegetation
+  // Gray → bare soil or mixed
+  let R = 0.3 * (1 - frostScore);
+  let G = 0.5 * (1 - frostScore);
+  let B = frostScore;
+
+  return [R, G, B];
+}
