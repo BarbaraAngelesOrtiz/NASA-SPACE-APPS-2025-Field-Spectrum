@@ -18,16 +18,16 @@ function evaluatePixel(sample) {
   let vv = 10 * Math.log10(sample.VV);
   let vh = 10 * Math.log10(sample.VH);
 
-  // --- Water detection ---
+  // Water detection 
   let waterMask = vv < -19 && vh < -23;
 
-  // --- Frost proxy ---
+  //  Frost proxy 
   let frostIndex = clamp((-19 - vh) / 6, 0, 1);
   let ratio = vv - vh;
   let ratioNorm = clamp((ratio - 4) / 10, 0, 1);
   let frostScore = clamp((frostIndex * 0.6 + (1 - ratioNorm) * 0.4), 0, 1);
 
-  // --- Base classification ---
+  //  Base classification 
   // Estimate surface type: vegetation/soil based on VV reflectivity
   let vegetationMask = vv > -15 && vh > -20; // stronger returns → vegetation/rough terrain
 
@@ -57,3 +57,4 @@ function evaluatePixel(sample) {
 
   return [R, G, B];
 }
+
