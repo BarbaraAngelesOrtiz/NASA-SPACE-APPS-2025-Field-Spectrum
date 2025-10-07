@@ -1,4 +1,4 @@
-# 🌎 NASA Space Apps Challenge 2025 Field-Spectrum
+# 🌎 [NASA Space Apps Challenge 2025 Field-Spectrum](https://www.spaceappschallenge.org/2025/find-a-team/field-spectrum/?tab=project)
 # 🛰️ Fields Under Stress: Climate Impacts on Agriculture
 
 ## General Description of the Scripts
